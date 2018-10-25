@@ -155,8 +155,8 @@ implements MouseMotionListener, MouseListener {
 	public int y62 = 430;
 	public int x63 = 327;
 	public int y63 = 430;
-	public int x64 = 487;
-	public int y64 = 430;
+	static int x64 = 487;
+	static int y64 = 430;
 
 	public int x71 = 88;
 	public int y71 = 510;
@@ -249,8 +249,8 @@ implements MouseMotionListener, MouseListener {
 		col.ball66Y = y63;
 		checker.blue14X = x64;
 		checker.blue14Y = y64;
-		col.ball68X = x64;
-		col.ball68Y = y64;
+//		col.ball68X = x64;
+//		col.ball68Y = y64;
 
 		checker.blue21X = x71;
 		checker.blue21Y = y71;
@@ -660,13 +660,7 @@ if (square84) {
 			square11 = true;
 			highlight11 = true;
 		}
-		if (e.getX() > col.rect11.x && e.getX() < col.rect11.x 
-				+ col.rect11.width && e.getY() > col.rect11.y
-				&& e.getY() < col.rect11.y 
-				+ col.rect11.height) {
-			System.out.println("Out of bounds");
 
-		}
 		if (e.getX() > col.ball13X && e.getX() < col.ball13X 
 				+ col.ball13.width && e.getY() > col.ball13Y
 				&& e.getY() < col.ball13Y + col.ball13.height) {
